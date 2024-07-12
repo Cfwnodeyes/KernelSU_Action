@@ -96,8 +96,8 @@ jobs:
       run: |
         cd $GITHUB_WORKSPACE/kernel_workspace
         mkdir clang-aosp
-        wget https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/a6fc52435e9bbca3b0d9a13ee8ae28377ec87bba.tar.gz
-        tar -C clang-aosp/ -zxvf a6fc52435e9bbca3b0d9a13ee8ae28377ec87bba.tar.gz
+        wget https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/android-msm-bonito-4.9-android12-qpr1/clang-r399163b.tar.gz
+        tar -C clang-aosp/ -zxvf clang-r399163b.tar.gz
 
     - name: Download Custom-Clang
       if: env.USE_CUSTOM_CLANG == 'true'
